@@ -20,7 +20,7 @@ Se debe crear cada una de las vistas que consuman cada los servicios REST para l
 
 Los productos además de listarse (mostrar imagen , código, nombre y precio), deben tener una vista de detalle. A continuación se lista cada uno de los endPoints para hacer un CRUD de la entidad producto. MI_ID es un id numérico entregado al momento de hacer la prueba.
 
-**baseUrl:** http://192.168.0.12:3000/api/v1/
+**baseUrl:** http://192.168.0.14:3000/api/v1/
 
 ## Listar
    **url:** stores/{MI_ID}/products
