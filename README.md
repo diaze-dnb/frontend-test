@@ -1,14 +1,14 @@
-﻿ # Prueba técnica Frontend
+# Prueba técnica Frontend
  
    **Objetivos:** 
  - Comprensión de lectura.
  - Solución de Problemas.
  - Conexión entre diferente sistemas.
- - Conceptos básicos de Html, Css, Javascript
+ - Conceptos básicos de Html, Css, Javascript.
  - Manejo del tiempo.
  - Diseño amigable y estilo de la página.
  - Uso de librerías y/o Frameworks.
- - Utilización de comandos git
+ - Utilización de comandos git.
 
 
 # Mi tiendecita
@@ -16,11 +16,22 @@
 La Federación Nacional de Comerciantes, **FENALCO**, desea digitalizar el proceso de compra y venta de productos para sus asociados. Para ellos se desea implementar una primera fase de digitalización, la cuál consiste en que los tenderos puedan **ingresar, editar, listar y eliminar** los productos que manejan en sus tiendas a través de un API REST. 
 
 # Frontend
-Se debe crear cada una de las vistas que consuman cada los servicios REST para la creación, edición, listado y eliminación de productos. 
 
-Los productos además de listarse (mostrar imagen , código, nombre y precio), deben tener una vista de detalle. A continuación se lista cada uno de los endPoints para hacer un CRUD de la entidad producto. MI_ID es un id numérico entregado al momento de hacer la prueba.
+Se debe hacer fork de este repositorio y subir la prueba 
 
-**baseUrl:** http://192.168.0.14:3000/api/v1/
+Se debe crear cada una de las vistas que consuman los servicios REST para la creación, edición, listado y eliminación de productos.
+
+Los productos además de listarse (mostrar imagen, código, nombre y precio), deben tener una vista de detalle. 
+
+El diseño y el numero de vistas son decisión propia, incluso se podria crear 1 sola vista (para el listado de productos) y la de detalle/edicion/creacion en 1 modal.
+
+El objetivo inicial es crear todas las vistas necesarias con datos falsos, incluso simular acciones como editar y crear.
+
+MI_ID es un id numérico entregado al momento de la entrevista junto con la url.
+
+A continuación se lista cada uno de los endPoints para hacer un CRUD de la entidad producto.
+
+**baseUrl:** http://{url}/api/v1/
 
 ## Listar
    **url:** stores/{MI_ID}/products
