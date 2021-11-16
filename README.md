@@ -21,7 +21,7 @@ Se debe hacer fork de este repositorio y subir la prueba
 
 Se debe crear cada una de las vistas que consuman los servicios REST para la creación, edición, listado y eliminación de productos.
 
-Los productos además de listarse (mostrar imagen, código, nombre y precio), deben tener una vista de detalle. 
+Los productos además de listarse (mostrar imagen, código, nombre y precio), deben tener una vista de detalle (aqui se muestra la descripcion).
 
 El diseño y el numero de vistas son decisión propia, incluso se podria crear 1 sola vista (para el listado de productos) y la de detalle/edicion/creacion en 1 modal.
 
