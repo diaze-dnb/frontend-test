@@ -1,0 +1,15 @@
+@import "src/assets/styles/tokens";
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50rem;
+  .imageContainer {
+    width: 100%;
+    padding-top: $spacing-small;
+    .image {
+      width: 14rem;
+      height: 14rem;
+    }
+  }
+}

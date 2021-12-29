@@ -1,0 +1,100 @@
+@import "src/assets/styles/tokens";
+
+$mini: 12rem;
+$small: 25rem;
+$medium: 32rem;
+$large: 48rem;
+
+.inputContainer {
+  margin-top: $spacing-x-small;
+
+  .labelContainer {
+    margin-bottom: $spacing-xx-small;
+    text-align: left;
+
+    .label {
+      font-size: $font-size-small;
+      margin-bottom: $spacing-small;
+      color: $color-gray-black;
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  .input {
+    padding: $spacing-none $spacing-small;
+    height: 4rem;
+    border-radius: $border-radius-high;
+    border: $border-solid-1 $color-gray-light;
+    font-size: $font-size-large;
+    font-family: Montserrat, sans-serif;
+    color: $color-gray-dark;
+
+    &::placeholder {
+      color: $color-gray-light;
+    }
+
+    &:hover {
+      border: $border-solid-1 $color-blue;
+    }
+
+    &:focus-visible {
+      outline-color: $color-blue-dark;
+      border: $border-solid-1 $color-blue-dark;
+    }
+  }
+
+  .mini {
+    width: $mini;
+  }
+
+  .small {
+    width: $small;
+  }
+
+  .medium {
+    width: $medium;
+  }
+
+  .large {
+    width: $large;
+  }
+
+  .file {
+    border: none;
+
+    &:hover {
+      border: none;
+    }
+
+    &:focus-visible {
+      border: none;
+    }
+  }
+
+  .errorContainer {
+    display: flex;
+    justify-content: start;
+    padding-top: $spacing-xx-small;
+
+    .errorMessage {
+      font-size: $font-size-medium;
+      font-family: Montserrat, sans-serif;
+      color: $color-red-error;
+      margin-left: $spacing-x-small;
+    }
+  }
+
+  .errorStatus {
+    outline: $border-solid-1 $color-red-error;
+    border: $border-solid-1 $color-red-error;
+
+    &:focus-visible {
+      outline-color: $color-red-error;
+      border: $border-solid-1 $color-red-error;
+    }
+
+    &:hover {
+      border: $border-solid-1 $color-red-error;
+    }
+  }
+}

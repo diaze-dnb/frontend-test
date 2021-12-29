@@ -1,0 +1,18 @@
+@import "assets/styles/tokens";
+
+.app {
+  display: flex;
+  padding: $spacing-small;
+  text-align: center;
+}
+
+.appHeader {
+  background-color: #293249;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}

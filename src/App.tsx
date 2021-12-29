@@ -1,24 +1,59 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import styles from "./App.module.scss";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Modal } from "./components/modal/modal";
+import { Form } from "./components/form/form";
+import { Header } from "./components/header/header";
+import { Item } from "./components/item/item";
 
 function App() {
+  const [modalClose, setModalClose] = useState<boolean>(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <Header onClickFunction={() => setModalClose(true)} />
+      <div className={styles.app}>
+        <Modal
+          open={modalClose}
+          onClose={() => setModalClose(!modalClose)}
+          showButtonClose={true}
+          // isContainer={true}
         >
-          Learn React
-        </a>
-      </header>
+          <Form readonly={false} />
+        </Modal>
+        <Item
+          imageURL={
+            "https://kredfeed-assets.s3.amazonaws.com/images/businessman.jpg"
+          }
+          name="Tabla"
+          onClickUpdate={() => setModalClose(true)}
+          price={120}
+          code={"HA123KS345LC4"}
+        />
+        <Item
+          imageURL={
+            "https://kredfeed-assets.s3.amazonaws.com/images/businessman.jpg"
+          }
+          name="Tabla"
+          onClickUpdate={() => console.log("update")}
+          price={120}
+          code={"HA123KS345LC4"}
+        />{" "}
+        <Item
+          imageURL={
+            "https://kredfeed-assets.s3.amazonaws.com/images/businessman.jpg"
+          }
+          name="Tabla"
+          onClickUpdate={() => console.log("update")}
+          price={120}
+          code={"HA123KS345LC4"}
+        />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<div>modal</div>} />
+            <Route path="/hi" element={<div>hi</div>} />
+          </Routes>
+        </BrowserRouter>
+      </div>
     </div>
   );
 }

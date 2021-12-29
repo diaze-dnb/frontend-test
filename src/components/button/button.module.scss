@@ -1,0 +1,33 @@
+@import "src/assets/styles/tokens";
+
+$small: 10rem;
+$medium: 20rem;
+$large: 29rem;
+
+.button {
+  border-radius: $border-radius-high;
+  border: $border-solid-2 $color-blue;
+  background-color: $color-blue;
+  color: $color-white;
+  font-weight: $font-weight-bold;
+  letter-spacing: $spacing-xxx-small;
+  font-size: $font-size-medium;
+  height: 4rem;
+
+  &:hover {
+    background-color: $color-blue-dark;
+    border-color: $color-blue-dark;
+  }
+}
+
+.small {
+  width: $small;
+}
+
+.medium {
+  width: $medium;
+}
+
+.large {
+  width: $large;
+}

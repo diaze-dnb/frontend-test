@@ -1,0 +1,83 @@
+@import "src/assets/styles/tokens";
+
+.item {
+  display: flex;
+  max-width: 18rem;
+  width: 18rem;
+  height: 27rem;
+  max-height: 27rem;
+  border: $border-solid-1 $color-blue-sky;
+  border-left: none;
+  border-radius: $border-radius;
+  background-color: $color-white;
+  margin: $spacing-xxx-large $spacing-none $spacing-none $spacing-small;
+
+  .cardContainer {
+    width: 17.9rem;
+    padding: $spacing-xx-small $spacing-none;
+
+    .title {
+      margin-bottom: $spacing-x-small;
+      font-size: $font-size-x-large;
+      font-weight: $font-weight-semibold;
+    }
+
+    .image {
+      width: 14rem;
+      height: 14rem;
+    }
+
+    .price {
+      font-size: $font-size-x-large;
+    }
+
+    .code {
+      font-size: $font-size-small;
+      font-weight: $font-weight-semibold;
+      color: #000;
+      width: 100%;
+      height: 2rem;
+      margin: $spacing-xx-small $spacing-none;
+    }
+
+    .buttonsContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .detail {
+        width: 6rem;
+        border: $border-solid-2 $color-blue;
+        border-radius: $border-radius-high;
+        background-color: $color-blue;
+        //margin: $spacing-xx-small $spacing-large;
+
+        &:hover {
+          background-color: $color-blue-dark;
+          border-color: $color-blue-dark;
+          cursor: pointer;
+        }
+      }
+
+      .edit {
+        width: 6rem;
+        border: $border-solid-2 $color-blue;
+        border-radius: $border-radius-high;
+        background-color: $color-blue;
+        //margin: $spacing-xx-small $spacing-large;
+
+        &:hover {
+          background-color: $color-blue-dark;
+          border-color: $color-blue-dark;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .borderRight {
+    width: 0.6rem;
+    height: 100%;
+    background-color: $color-blue-sky;
+  }
+}

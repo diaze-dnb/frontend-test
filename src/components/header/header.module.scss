@@ -1,0 +1,23 @@
+@import "src/assets/styles/tokens";
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: $spacing-xxx-large;
+  left: $spacing-none;
+  top: $spacing-none;
+  background-color: $color-white;
+  color: #333;
+  border-bottom: $border-solid-1 $color-gray-dark;
+  padding: $spacing-none $spacing-small;
+  z-index: 2500;
+
+  .logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
